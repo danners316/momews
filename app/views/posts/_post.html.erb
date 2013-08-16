@@ -1,0 +1,6 @@
+  <% @posts.each do|post| %>
+      <div class="post" xmlns="http://www.w3.org/1999/html">
+ <span id="byline"><%= post.name %></span>
+ <p><%= post.body %></p>
+ </div>
+  <% end %>

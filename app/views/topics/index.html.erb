@@ -1,0 +1,102 @@
+
+
+<div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><%= link_to 'Football - ', root_path %><%= link_to 'Ramblings - ', root_path %><%= link_to 'Travel - ', root_path %>
+  <%= link_to 'Food - ', root_path %><%= link_to 'Everything', root_path %></div>
+<div id="tables_box">
+<table>
+  <tr><td><h1>Links</h1></td></tr>
+  <tr><td><%= link_to 'Send Me a Quote', root_path %></td></tr>
+  <tr><td><%= link_to 'Register To Comment' , root_path %></td></tr>
+  <tr><td><%= link_to 'Give Me a Job', root_path %></td></tr>
+  <tr><td><%= link_to 'Link To', root_path %></td></tr>
+  <tr><td><%= link_to 'View Archives', root_path %></td></tr>
+  <tr><td><%= link_to 'Mail Me' , root_path %></td></tr>
+  <tr><td><%= link_to 'Request Web Design?', root_path %></td></tr>
+  <tr><td><%= link_to 'About Me', root_path %></td></tr>
+
+</table>
+
+    <table >
+
+    <form name="contact" onsubmit="return validateForm();" action="mailto:daniel.reynolds7a@gmail.com?subject=Customer_Inquiry" enctype="text/plain"  method="post" >
+      <tr><td><h1>Quick Mail</h1></td></tr>
+      <tr><td><label>Your name:</label></td></tr>
+      <tr><td><input type="text" name="First Name" id="fname" /></td></tr>
+      <tr><td><label>E-mail: </label></td></tr>
+      <tr><td><input type="text" name="E-mail" id="email"/></td></tr>
+      <tr><td><label>Message: </label> <textarea name="Message" id="Message" rows="10" cols="15"></textarea></td></tr>
+      <tr><td><%= image_submit_tag("submit.gif")%></td></tr>
+
+    </form>
+
+    </table>
+
+
+
+
+</div>
+<div id="special_box">
+<div class="specials">
+  <h2>Meal of the Week</h2>
+
+  <p>
+    <span class="title">Mmmm!:</span><%= image_tag 'meal.png', :class => "fl" %>Coconut Red Kidney Bean Curry<br /><br />
+    <%= link_to 'See Recipe', "http://www.yummly.com/recipe/Coconut-Rice-Martha-Stewart-194311?columns=4&position=1%2F36" %></p>
+</div>
+<div class="specials">
+  <h2>Tune of the Week</h2>
+  <p><%= image_tag 'tune.png', :class => "fl" %>
+  <span class="title">Artist:</span> Ben Nichols<br />
+  <span class="title">Song:</span> Shelter<br /><br />
+  Good Tune from the end of the film 'Take Shelter'<br /><br /> <%=  link_to 'Listen Here', "http://www.youtube.com/watch?v=7CLbfmM9lnk", :target => "_blank" %></p>
+</div>
+<div class="specials">
+  <h2>Youtube of the Week</h2>
+  <p><%= image_tag 'joke.png', :class => "fl"  %>
+    <span class="title">Brett Favre:</span>Football in The Groin
+    <br /><br /> <%=  link_to 'Watch Here', "http://www.youtube.com/watch?v=wMywHFojUtY", :target => "_blank" %></p>
+</div>
+  <div class="specials">
+    <h2>Today's Headlines</h2>
+    <p><span id="line">Today a woman shot another who was woman</span></p>
+  </div>
+  <div id="youtube">
+    <h4>Classic Skills</h4>
+    <iframe width="490" height="250"
+            src="//www.youtube.com/embed/ZgqsaDnsEq8" allowfullscreen>
+    </iframe>
+  </div>
+
+
+
+</div>
+      <div id="articles">
+        <% @topics.each do |topic| %>
+      <span id="byline">
+
+      <%= topic.name %> - <%= time_ago_in_words(topic.created_at) %> ago</span>
+             <h1><%= link_to topic.title, topic %></h1>
+      <hr />
+        <% if topic.attachment.file? %>
+        <%= image_tag topic.attachment.url, :class => "picture" %>
+            <% end %>
+      <%= simple_format(truncate(topic.body, :length => 1000)) %>
+      <%= link_to "Read More", topic, :class => "read_more" %>
+        <hr />
+    <ul>
+    <% if current_user && current_user.admin %>  
+    <li><%= link_to 'Edit', edit_topic_path(topic) %></li>
+    <li><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <% end %>
+    </ul>
+        <% end %>
+        <%= will_paginate @topics %>
+    </div>
+
+
+
+
+
+
+
+

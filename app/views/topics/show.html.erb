@@ -1,0 +1,17 @@
+
+<h1><%=  @topic.title %></h1>
+<div id="article_show">
+
+  <%= simple_format(@topic.body) %><br />
+    <span id="byline">By:<br />
+  <%= @topic.name %>
+</span>
+</div>
+
+
+<div id="post_it">
+
+<%= render 'posts/form' %>
+  <h3>Comments</h3>
+<div id="comments"><%= render 'posts/post' %> </div>
+</div>

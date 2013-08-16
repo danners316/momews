@@ -1,0 +1,304 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body{font-family:"Glamtrix";
+font-size: 16px;
+    }
+
+/* Application.html Topics Show*/
+
+#wrapper{
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fr{float:right;}
+.fl{float:left;}
+
+.fr img{margin-left:5px;}
+.fl img{margin-right:5px; }
+
+#footer{
+    width:100%;
+    margin-top:20px;
+    HEIGHT:60PX;
+    BACKGROUND-image:url('logobg1.png');
+    clear:both;}
+
+#i_like{float:left;
+    clear:left;
+    width:400px;
+    height:300px;
+    border:1px solid black;}
+
+
+#bar{
+    width:100%;
+    HEIGHT:70PX;
+    opacity:0.9;
+    BACKGROUND-image:url('logobg.png');
+    position:fixed;
+    top:0px;
+    left:0px;
+z-index:99;}
+
+#bar img{float:left;
+    margin-left:20px;
+}
+
+#nav{
+    width:200px;
+    HEIGHT:auto;
+    margin-right:10px;
+    float:right;
+    font-family:"Accidental Presidency";
+}
+
+#tagbar{
+    margin:0 0 10px 0;
+    width:1048px;
+background-color:#333;
+    border:1px solid #ccc;
+    border-radius: 15px;
+padding:5px;
+    text-align: center;
+}
+
+#tagbar a{color:white;
+margin-right:5px;
+text-decoration: none;
+font-family: "KG Be Still And Know";
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+
+.KG{font-family: "KG Be Still And Know";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color:white;}
+
+.picture{float:right;
+width:250px;
+height:auto;
+border:1px solid #333;
+margin:0 0 5px 15px;}
+
+#tables_box{float:right;
+    width:190px;
+    margin-left: 10px;}
+
+
+#tables_box h1{text-align: center;
+color:white;}
+
+table{float:right;
+width:190px;
+    margin-bottom:10px;
+
+background-color: #4D8683;
+    border-collapse: collapse;
+}
+
+
+#line h3{ text-transform: uppercase;
+
+    font-weight:bold;
+    line-height: 95%;
+    font-family: "Accidental Presidency";
+    font-size:23px;
+    letter-spacing: 0.1em;
+text-align: center;}
+
+#youtube{margin-left:10px;
+float:left;}
+
+td{padding:5px;
+border:2px dashed white;
+}
+
+td a, td, td a:visited{color:white;
+font-family: "KG Be Still And Know";
+text-decoration: none;
+font-size:15px;}
+
+td a:hover{color:black;
+background-color:#4D8683;}
+
+#tagbar a:hover{font-size:17px;
+color:#666;}
+
+#articles{width:540px;
+    text-align: justify;
+    margin-right: 20px;
+
+}
+
+#articles hr{width:540px;}
+
+#articles a{color: #906;
+    text-decoration: none;
+    font-size:16px;
+}
+#articles a:hover{color: #4D8683;
+    background-color:#F3F4F5;
+}
+
+
+#special_box{float:right;
+width:300px;}
+
+.specials{width:284px;
+margin:0 5px;
+float:right;
+clear:right;}
+
+.specials p{margin-top:2px;
+    border:2px solid #333;
+    padding:10px;
+    overflow: auto;
+    text-align: right;
+}
+
+.title{font-weight:bold;
+display:block;}
+
+h2{color:white;
+    background-color:#333;
+padding:2px;
+    border:2px solid black;
+font-family: "Accidental Presidency";
+font-size:22px;
+    margin:0;
+    text-align: center;
+}
+
+h4{color:white;
+    background-color:#333;
+    width:490;
+    padding:2px;
+
+    border:2px solid black;
+    font-family: "Accidental Presidency";
+    font-size:22px;
+    margin:0 0 4px 0;
+    text-align: center;
+}
+
+h1, #articles a, #articles a:visited{color:#4D8683;
+    font-weight: bold;
+    font-family:"Accidental Presidency";
+    text-transform: uppercase;
+    margin:2px 0 10px 0 ;
+    letter-spacing: 0.1em;
+
+font-size:26px;}
+
+h3{color:#333;
+    font-weight: bold;
+    font-family:"Accidental Presidency";
+    text-transform: uppercase;
+    margin:2px 0 10px 0 ;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    font-size:18px;}
+
+#logo{float:left;
+width:1060px;
+height:70px;}
+#notice{
+    width:300px;
+    float:left;
+    margin-left:15px;
+    border-bottom:1px solid white;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    color: white !important;
+    height:auto;
+}
+
+#nav p{
+
+    color:white;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    padding:5px;
+    border-bottom:2px solid white;
+}
+
+#nav p:first-letter{font-size: 45px;
+font-weight: bold;}
+
+#nav a{color:white;
+text-decoration: none;
+float:right;
+    letter-spacing: 0.1em;
+    font-size:16px;
+margin:25px 0 0 10px;}
+
+#nav a:hover{
+        color:#999;
+}
+
+#quotes{
+height:250px;
+width:100%;
+    margin-bottom:10px;
+z-index:1;}
+
+#quotes img { display: none;
+        height:auto;}
+#quotes img.first { display: block }
+
+#byline{font-size:13px;
+font-family:"KG Be Still And Know";
+display:block;}
+
+
+
+#outwrap{background-color:#F3F4F5;
+    height:auto;
+overflow: auto;}
+
+.read_more, .read_more:active, .read_more:visited, .read_more:hover{font-size: 16px !important;}
+
+.pagination a, .pagination a:visited, .pagination a:active{font-family:"KG Be Still And Know" !important;
+font-size:12px !important;
+letter-spacing: 0.2em; !important}
+
+/* Topics Show*/
+
+#article_show{float:left;
+width:640px;
+height:auto;
+padding-right:20px;
+text-align: justify;}
+
+
+
+#post_it{
+    float:left;
+    height:auto;
+    width:400px;
+    margin-top:10px;
+
+
+
+    #post_it h2{width:400px !important;}
+
+#post_it #comments{width:376px;
+border:2px solid #333;
+padding:10px;}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mo Mews Mo Problems</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="bar">
+  <%= link_to image_tag('logo.png'), root_path %>
+  <%= image_tag('twitter.png') %>
+  <%= image_tag('facebook.png') %>
+  <%= image_tag('mail.png') %>
+ <!-- <div id="notice"><%= notice %></div>-->
+<div id="nav">
+
+  <% unless current_user %>
+  <%= link_to 'Register', new_user_path %>
+  <%= link_to "Login", login_path %>
+    <%end %>
+  <% if current_user %>
+   <%= link_to 'New Article', new_topic_path %>
+   <%= link_to "Logout", logout_path %>
+      <% end %>
+
+</div>
+
+
+
+</div>
+
+<div id="outwrap">
+<div id="wrapper">
+<div id="quotes">
+  <%= image_tag "quote1.png" %>
+  <%= image_tag "quote2.png" %>
+  <%= image_tag "quote3.png" %>
+  <%= image_tag "quote4.png" %>
+  <%= image_tag "quote5.png" %>
+</div>
+
+
+
+<%= yield %>
+</div>
+  <!--<div id="footer">
+   <%= image_tag 'ynhbrand.png', :class => "fr" %>
+  </div>-->
+</div>
+
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
