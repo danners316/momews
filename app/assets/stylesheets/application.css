@@ -57,6 +57,34 @@ z-index:99;}
     margin-left:20px;
 }
 
+.pointer{cursor:pointer;}
+
+#login{width:200px;
+height:165px;
+background-image: url('logobg2.png');
+    padding-left: 10px;
+    color:white;
+opacity: 0.9;
+position:fixed;
+right:0px;
+top:70px;
+    letter-spacing: 0.1em;}
+
+#register{width:200px;
+    height:165px;
+    background-image: url('logobg2.png');
+    padding-left: 10px;
+    color:white;
+    opacity: 0.9;
+    letter-spacing: 0.1em;
+    position:fixed;
+    right:0px;
+    top:70px;}
+
+.hide_link{float:right;
+margin-right:5px;
+cursor:pointer}
+
 #nav{
     width:200px;
     HEIGHT:auto;
@@ -75,7 +103,17 @@ padding:5px;
     text-align: center;
 }
 
-#tagbar a{color:white;
+#tagbar2{
+    margin:10px 0 10px 0;
+    width:1048px;
+    background-color:#333;
+    border:1px solid #ccc;
+    border-radius: 15px;
+    padding:5px;
+    text-align: center;
+}
+
+#tagbar a, #tagbar2 a{color:white;
 margin-right:5px;
 text-decoration: none;
 font-family: "KG Be Still And Know";
@@ -121,7 +159,8 @@ background-color: #4D8683;
 text-align: center;}
 
 #youtube{margin-left:10px;
-float:left;}
+float:left;
+clear:right;}
 
 td{padding:5px;
 border:2px dashed white;
@@ -135,12 +174,13 @@ font-size:15px;}
 td a:hover{color:black;
 background-color:#4D8683;}
 
-#tagbar a:hover{font-size:17px;
+#tagbar a:hover, #tagbar2 a:hover{font-size:17px;
 color:#666;}
 
 #articles{width:540px;
     text-align: justify;
     margin-right: 20px;
+    min-height: 1050px;
 
 }
 
@@ -153,6 +193,31 @@ color:#666;}
 #articles a:hover{color: #4D8683;
     background-color:#F3F4F5;
 }
+
+#likes{width:531px;
+clear:left;
+float:left;
+padding:5px 0 0 5px;
+margin-top:5px;
+letter-spacing: 0.1em;}
+
+#likes hr{width:540px}
+
+#likes a, likes a:visited, #backlog a, backlog a:visited{color:#333;
+    text-decoration: none;
+font-family: "Accidental Presidency"}
+#likes a:hover, #backlog a:hover{#color:#999;}
+
+#backlog{width:501px;
+    float:left;
+    margin-top:5px;
+    margin-left:10px;
+    padding:5px 5px 0 0 ;
+    letter-spacing: 0.1em;
+text-align: right;
+}
+
+#backlog hr{width:515px}
 
 
 #special_box{float:right;
@@ -180,6 +245,7 @@ padding:2px;
 font-family: "Accidental Presidency";
 font-size:22px;
     margin:0;
+    font-weight: lighter;
     text-align: center;
 }
 
@@ -264,7 +330,8 @@ z-index:1;}
 
 #byline{font-size:13px;
 font-family:"KG Be Still And Know";
-display:block;}
+display:block;
+    color:#4D8683;}
 
 
 
@@ -278,6 +345,8 @@ overflow: auto;}
 font-size:12px !important;
 letter-spacing: 0.2em; !important}
 
+.acc_font{font-family:"Accidental Presidency"}
+
 /* Topics Show*/
 
 #article_show{float:left;
@@ -285,6 +354,9 @@ width:640px;
 height:auto;
 padding-right:20px;
 text-align: justify;}
+
+.picture2{width:640px;
+height:auto;}
 
 
 
@@ -296,9 +368,11 @@ text-align: justify;}
 
 
 
-    #post_it h2{width:400px !important;}
+    #post_it h2{width:400px !important;
+        border:2px solid #333;}
 
-#post_it #comments{width:376px;
+#comments{width:376px;
+    text-align: center;
 border:2px solid #333;
 padding:10px;}
 

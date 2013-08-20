@@ -1,7 +1,6 @@
 
 
-<div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><%= link_to 'Football - ', root_path %><%= link_to 'Ramblings - ', root_path %><%= link_to 'Travel - ', root_path %>
-  <%= link_to 'Food - ', root_path %><%= link_to 'Everything', root_path %></div>
+
 <div id="tables_box">
 <table>
   <tr><td><h1>Links</h1></td></tr>
@@ -24,7 +23,7 @@
       <tr><td><input type="text" name="First Name" id="fname" /></td></tr>
       <tr><td><label>E-mail: </label></td></tr>
       <tr><td><input type="text" name="E-mail" id="email"/></td></tr>
-      <tr><td><label>Message: </label> <textarea name="Message" id="Message" rows="10" cols="15"></textarea></td></tr>
+      <tr><td><label>Message: </label> <textarea name="Message" id="Message" rows="9" cols="16"></textarea></td></tr>
       <tr><td><%= image_submit_tag("submit.gif")%></td></tr>
 
     </form>
@@ -47,21 +46,20 @@
   <h2>Tune of the Week</h2>
   <p><%= image_tag 'tune.png', :class => "fl" %>
   <span class="title">Artist:</span> Ben Nichols<br />
-  <span class="title">Song:</span> Shelter<br /><br />
-  Good Tune from the end of the film 'Take Shelter'<br /><br /> <%=  link_to 'Listen Here', "http://www.youtube.com/watch?v=7CLbfmM9lnk", :target => "_blank" %></p>
+  <span class="title">Song:</span> Shelter<br /><br /><%=  link_to 'Listen Here', "http://www.youtube.com/watch?v=7CLbfmM9lnk", :target => "_blank" %></p>
 </div>
 <div class="specials">
-  <h2>Youtube of the Week</h2>
+  <h2>Image of the Week</h2>
   <p><%= image_tag 'joke.png', :class => "fl"  %>
-    <span class="title">Brett Favre:</span>Football in The Groin
-    <br /><br /> <%=  link_to 'Watch Here', "http://www.youtube.com/watch?v=wMywHFojUtY", :target => "_blank" %></p>
+    <span class="title">Trolltunga Norway</span>Sitting On The Edge of A Cliff.
+    <br /><br /> <%=  link_to 'View Here', "http://onebigphoto.com/sitting-on-the-edge-of-trolltunga-norway/?utm_source=newsletter&utm_medium=email&utm_campaign=newletter%2Banalytics", :target => "_blank" %></p>
 </div>
   <div class="specials">
     <h2>Today's Headlines</h2>
     <p><span id="line">Today a woman shot another who was woman</span></p>
   </div>
   <div id="youtube">
-    <h4>Classic Skills</h4>
+    <h2>You<%= image_tag 'tube.png' %>  Of The Week</h2>
     <iframe width="490" height="250"
             src="//www.youtube.com/embed/ZgqsaDnsEq8" allowfullscreen>
     </iframe>
@@ -90,8 +88,31 @@
     <% end %>
     </ul>
         <% end %>
-        <%= will_paginate @topics %>
+        <%= will_paginate @topics, :param_name => 'main_articles_page' %>
     </div>
+<div id="tagbar2"><span class="KG">Article Search:</span><%= form_tag topics_path, :method => 'get' do %>
+      <%= text_field_tag :search_query, params[:search_query] %>
+      <%= image_submit_tag("login.gif")%>
+  <% end %></div>
+<div id="likes">
+
+  <h1>Likes</h1>
+  <hr />
+  <%= render 'likes/likes' %>
+
+  <span class="title"><%= link_to 'View All Likes', root_path %></span>
+
+</div>
+<div id="backlog">
+
+  <h1>Backlog</h1>
+  <hr />
+
+  <%= render 'topics/list' %>
+
+
+  <span class="title"> <%= link_to 'View Archives', root_path %></span>
+  </div>
 
 
 

@@ -16,8 +16,8 @@
 <div id="nav">
 
   <% unless current_user %>
-  <%= link_to 'Register', new_user_path %>
-  <%= link_to "Login", login_path %>
+  <a onclick="show_register()" class="pointer">Register</a>
+  <a onclick="show_login()" class="pointer">Login</a>
     <%end %>
   <% if current_user %>
    <%= link_to 'New Article', new_topic_path %>
@@ -25,6 +25,15 @@
       <% end %>
 
 </div>
+  <div id="login" >
+
+   <%= render 'sessions/login' %>
+  </div>
+
+  <div id="register" >
+
+    <%= render 'users/form' %>
+  </div>
 
 
 
@@ -39,6 +48,8 @@
   <%= image_tag "quote4.png" %>
   <%= image_tag "quote5.png" %>
 </div>
+  <div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><%= link_to 'Football - ', root_path %><%= link_to 'Ramblings - ', root_path %><%= link_to 'Travel - ', root_path %>
+    <%= link_to 'Food - ', root_path %><%= link_to 'Everything', root_path %></div>
 
 
 

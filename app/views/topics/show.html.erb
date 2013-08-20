@@ -1,7 +1,9 @@
 
 <h1><%=  @topic.title %></h1>
 <div id="article_show">
-
+  <% if @topic.attachment.file? %>
+      <%= image_tag @topic.attachment.url, :class => "picture" %>
+  <% end %>
   <%= simple_format(@topic.body) %><br />
     <span id="byline">By:<br />
   <%= @topic.name %>

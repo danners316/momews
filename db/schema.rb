@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130814120910) do
+ActiveRecord::Schema.define(:version => 20130816132045) do
+
+  create_table "likes", :force => true do |t|
+    t.string   "title"
+    t.string   "source"
+    t.string   "link"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "posts", :force => true do |t|
     t.text     "body"

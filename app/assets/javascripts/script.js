@@ -1,10 +1,15 @@
+
+
 $(document).ready(function() {
     $('#quotes').cycle({
 		fx: 'fade', // others fade, scrollUp, shuffle
 		after: onAfter,
-		delay:  -5000
+		timeout:  7000
 
 	});
+    $("#login").hide();
+    $("#register").hide();
+
 });
 
 captionArray = [
@@ -29,3 +34,22 @@ function onAfter(curr,next,opts) {
         captionIndex = 0;
     }
 }
+
+
+var show_login = (function()
+{
+$("#register").slideUp();
+$("#login").slideDown();
+});
+
+var show_register = (function()
+{
+    $("#login").slideUp();
+    $("#register").slideDown();
+});
+
+var hide_box = (function()
+{
+    $("#register").hide();
+    $("#login").hide();
+});

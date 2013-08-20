@@ -2,7 +2,9 @@ class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
   def index
-    @topics = Topic.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+    @topics = Topic.order("created_at DESC").paginate(:page => params[:main_articles_page], :per_page => 2)
+    @topics_all = Topic.search(params[:search_query])
+    @likes = Like.order('created_at DESC').take(10)
   end
 
   # GET /topics/1

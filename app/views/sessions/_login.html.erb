@@ -1,0 +1,16 @@
+<%= form_tag sessions_path do %>
+    <div class="acc_font">
+    <p>
+      <%= label_tag :name %><br />
+      <%= text_field_tag :name %>
+    </p>
+    <p>
+      <%= label_tag :password %><br />
+      <%= password_field_tag :password %>
+    </p>
+    <p>
+      <span onclick="hide_box()" class="hide_link">Hide</span>
+      <%= image_submit_tag("login.gif")%>
+    </p>
+    </div>
+<% end %>
