@@ -144,6 +144,8 @@ text-transform: uppercase;
 letter-spacing: 0.1em;
 }
 
+
+
 .KG{font-family: "KG Be Still And Know";
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -198,7 +200,8 @@ td a:hover{color:black;
 background-color:#4D8683;}
 
 #tagbar a:hover, #tagbar2 a:hover{font-size:17px;
-color:#666;}
+color:#666;
+background-color:#333;}
 
 #tagbar2 form{display:inline;}
 
@@ -234,7 +237,8 @@ letter-spacing: 0.1em;}
 #likes a, likes a:visited, #backlog a, backlog a:visited, #backlog_all a, backlog_all a:visited{color:#333;
     text-decoration: none;
 font-family: "Accidental Presidency"}
-#likes a:hover, #backlog a:hover, backlog_all a:hover{#color:#999;}
+#likes a:hover, #backlog a:hover, backlog_all a:hover{#color:#999;
+    background-color:#F3F4F5; }
 
 #backlog_box{width:501px;
     float:left;
@@ -294,8 +298,9 @@ h1, #articles a, #articles a:visited, #archives a, #archives a:visited{color:#4D
     text-transform: uppercase;
     margin:2px 0 10px 0 ;
     letter-spacing: 0.1em;
+    background-color:#F3F4F5;
 
-font-size:26px;}
+    font-size:26px;}
 
 h3{color:#333;
     font-weight: bold;
@@ -366,7 +371,9 @@ display:block;
     height:auto;
 overflow: auto;}
 
-.read_more, .read_more:active, .read_more:visited, .read_more:hover, .pagination a, .pagination a:visited, .pagination a:active{font-size: 16px !important;}
+.read_more, .read_more:active, .read_more:visited, .read_more:hover, .pagination a, .pagination a:visited, .pagination a:active
+{font-size: 16px !important;
+background-color:#F3F4F5; }
 
 .acc_font{font-family:"Accidental Presidency"}
 
