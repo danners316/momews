@@ -1,10 +1,12 @@
 Talk::Application.routes.draw do
   resources :likes
 
-
+  get "topics/backlog"
   resources :topics do
   resources :posts, :only => [:create]
-end
+  end
+
+
 
   resources :users
 

@@ -41,23 +41,25 @@
 
 <div id="outwrap">
 <div id="wrapper">
-<div id="quotes">
-  <%= image_tag "quote1.png" %>
-  <%= image_tag "quote2.png" %>
-  <%= image_tag "quote3.png" %>
-  <%= image_tag "quote4.png" %>
-  <%= image_tag "quote5.png" %>
-</div>
-  <div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><%= link_to 'Football - ', root_path %><%= link_to 'Ramblings - ', root_path %><%= link_to 'Travel - ', root_path %>
-    <%= link_to 'Food - ', root_path %><%= link_to 'Everything', root_path %></div>
+  <div id="quotes">
+    <%= image_tag "quote1.png" %>
+    <%= image_tag "quote2.png" %>
+    <%= image_tag "quote3.png" %>
+    <%= image_tag "quote4.png" %>
+    <%= image_tag "quote5.png" %>
+  </div>
+  <div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><a onclick="show_football()" class="pointer">Football - </a><%= link_to 'Ramblings - ', :sort => "" %><%= link_to 'Travel - ', :sort => "" %>
+    <%= link_to 'Food - ', :sort => "" %><a onclick="show_general()" class="pointer">General - </a><%= link_to 'All', root_path %></div>
+
 
 
 
 <%= yield %>
+  <div id="footer">
+    <%= image_tag 'ynhbrand.png'%>
+  </div>
 </div>
-  <!--<div id="footer">
-   <%= image_tag 'ynhbrand.png', :class => "fr" %>
-  </div>-->
+
 </div>
 
 <script src="jquery-1.9.1.min.js"></script>

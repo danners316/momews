@@ -9,7 +9,6 @@ $(document).ready(function() {
 	});
     $("#login").hide();
     $("#register").hide();
-
 });
 
 captionArray = [
@@ -50,6 +49,20 @@ var show_register = (function()
 
 var hide_box = (function()
 {
-    $("#register").hide();
-    $("#login").hide();
+    $("#register").slideUp();
+    $("#login").slideUp();
+});
+
+var show_football = (function()
+{
+
+    $("#articles").load("/topics/backlog #football");
+
+});
+
+var show_general = (function()
+{
+
+    $("#articles").load("/topics/backlog #general");
+
 });

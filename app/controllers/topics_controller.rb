@@ -2,9 +2,14 @@ class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
   def index
+
     @topics = Topic.order("created_at DESC").paginate(:page => params[:main_articles_page], :per_page => 2)
-    @topics_all = Topic.search(params[:search_query])
+    @general = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "General" })
+    @football = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Football" })
+    @topics_all = Topic.search(params[:search_query]).take(10)
+
     @likes = Like.order('created_at DESC').take(10)
+
   end
 
   # GET /topics/1
@@ -16,6 +21,12 @@ class TopicsController < ApplicationController
 
   end
 
+  def backlog
+    #@topics = Topic.order( where  :tag => "General").paginate(:page => params[:main_articles_page], :per_page => 2)
+    #@topics_all = Topic.find(:all, :order => "tag" )
+    @football = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Football" }).take(2)
+    @general = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "General" }).take(2)
+  end
   # GET /topics/new
   # GET /topics/new.json
   def new
