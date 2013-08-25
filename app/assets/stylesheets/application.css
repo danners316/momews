@@ -116,6 +116,7 @@ cursor:pointer}
     font-family:"Accidental Presidency";
 }
 
+
 #tagbar{
     margin:0 0 10px 0;
     width:1048px;
@@ -298,9 +299,11 @@ h1, #articles a, #articles a:visited, #archives a, #archives a:visited{color:#4D
     text-transform: uppercase;
     margin:2px 0 10px 0 ;
     letter-spacing: 0.1em;
-    background-color:#F3F4F5;
 
     font-size:26px;}
+
+#articles a, #articles a:visited, #archives a, #archives a:visited {    background-color:#F3F4F5;
+}
 
 h3{color:#333;
     font-weight: bold;
@@ -348,6 +351,7 @@ margin:25px 0 0 10px;}
 
 #nav a:hover{
         color:#999;
+    background-color:#333;
 }
 
 #quotes{
@@ -404,6 +408,5 @@ height:auto;}
 
 #comments{width:376px;
     text-align: center;
-border:2px solid #333;
 padding:10px;}
 
