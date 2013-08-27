@@ -1,13 +1,5 @@
 Talk::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  config.paperclip_defaults = {
-      :storage => :s3,
-      :s3_credentials => {
-          :bucket => ENV['mews'],
-          :access_key_id => ENV['AKIAIBXZO7RCBWHGVF3A'],
-          :secret_access_key => ENV['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']
-      }
-  }
 
   # Code is not reloaded between requests
   config.cache_classes = true
