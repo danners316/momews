@@ -11,7 +11,7 @@
   <%= link_to image_tag('logo.png'), root_path %>
   <%= image_tag('twitter.png') %>
   <%= image_tag('facebook.png') %>
-  <%= image_tag('mail.png') %>
+  <a href="mailto:daniel.reynolds7a@gmail.com?Subject=GeneralMail" target="_top"><%= image_tag('mail.png') %></a>
  <!-- <div id="notice"><%= notice %></div>-->
 <div id="nav">
 
@@ -19,10 +19,14 @@
   <a onclick="show_register()" class="pointer">Register</a>
   <a onclick="show_login()" class="pointer">Login</a>
     <%end %>
-  <% if current_user %>
+  <% if current_user && current_user.admin %>
    <%= link_to 'New Article', new_topic_path %>
-   <%= link_to "Logout", logout_path %>
+   <%= link_to 'New Like', new_like_path %>
+   
       <% end %>
+  <% if current_user %>
+      <%= link_to "Logout", logout_path %>
+  <% end %>
 
 </div>
   <div id="login" >
@@ -48,8 +52,14 @@
     <%= image_tag "quote4.png" %>
     <%= image_tag "quote5.png" %>
   </div>
-  <div id="tagbar"><span class="KG">I </span><%= image_tag 'heart.png' %><a onclick="show_football()" class="pointer">Football - </a><%= link_to 'Ramblings - ', :sort => "" %><%= link_to 'Travel - ', :sort => "" %>
-    <%= link_to 'Food - ', :sort => "" %><a onclick="show_general()" class="pointer">General - </a><%= link_to 'All', root_path %></div>
+  <div id="tagbar">
+    <span class="KG">I </span>
+    <%= image_tag 'heart.png' %>
+    <a onclick="show_football()" class="pointer">Football </a> -
+    <a onclick="show_travel()" class="pointer">Travel </a> -
+    <a onclick="show_food()" class="pointer">Food </a> -
+    <a onclick="show_general()" class="pointer">General </a> -
+    <%= link_to 'View All', root_path %></div>
 
 
 

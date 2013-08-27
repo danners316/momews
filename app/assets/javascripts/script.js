@@ -66,3 +66,17 @@ var show_general = (function()
     $("#articles").load("/topics/backlog #general");
 
 });
+
+var show_food = (function()
+{
+
+    $("#articles").load("/topics/backlog #food");
+
+});
+
+var show_travel = (function()
+{
+
+    $("#articles").load("/topics/backlog #travel");
+
+});

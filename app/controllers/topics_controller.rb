@@ -6,9 +6,9 @@ class TopicsController < ApplicationController
     @topics = Topic.order("created_at DESC").paginate(:page => params[:main_articles_page], :per_page => 2)
     @general = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "General" })
     @football = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Football" })
-    @topics_all = Topic.search(params[:search_query]).take(10)
+    @topics_all = Topic.search(params[:search_query]).take(5)
 
-    @likes = Like.order('created_at DESC').take(10)
+    @likes = Like.order('created_at DESC').take(5)
 
   end
 
@@ -26,6 +26,8 @@ class TopicsController < ApplicationController
     #@topics_all = Topic.find(:all, :order => "tag" )
     @football = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Football" }).take(2)
     @general = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "General" }).take(2)
+    @food = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Food" }).take(2)
+    @travel = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Travel" }).take(2)
   end
   # GET /topics/new
   # GET /topics/new.json

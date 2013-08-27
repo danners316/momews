@@ -1,14 +1,14 @@
 <div id="tables_box">
 <table>
   <tr><td><h1>Links</h1></td></tr>
-  <tr><td><%= link_to 'Send Me a Quote', root_path %></td></tr>
-  <tr><td><%= link_to 'Register To Comment' , root_path %></td></tr>
-  <tr><td><%= link_to 'Give Me a Job', root_path %></td></tr>
+  <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=Quote" target="_top"> Send Me a Quote</a></td></tr>
+  <tr><td><a onclick="show_register()" class="pointer">Register To Comment</a></td></tr>
+  <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=Job" target="_top">Give Me a Job</a></td></tr>
   <tr><td><%= link_to 'Link To', root_path %></td></tr>
-  <tr><td><%= link_to 'View Archives', root_path %></td></tr>
-  <tr><td><%= link_to 'Mail Me' , root_path %></td></tr>
-  <tr><td><%= link_to 'Request Web Design?', root_path %></td></tr>
-  <tr><td><%= link_to 'About Me', root_path %></td></tr>
+  <tr><td><%= link_to 'View Archives', topics_backlog_path %></td></tr>
+  <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=GeneralMail" target="_top">Mail Me</a></td></tr>
+  <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=WebDesign" target="_top">Request Web Design?</a></td></tr>
+  <tr><td><%= link_to 'About Me', "www.dan.fernconsult.ie", :target => "_blank" %></td></tr>
 
 </table>
 
@@ -67,8 +67,7 @@
 </div>
       <div id="articles">
        <%= render 'topics/articles' %>
-
-    </div>
+           </div>
 <div class="flcl"></div>
 <div id="tagbar2"><span class="KG">Article Search:</span><%= form_tag topics_path, :method => 'get', :remote => true do %>
       <%= text_field_tag :search_query, params[:search_query] %>
