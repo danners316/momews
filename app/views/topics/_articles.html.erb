@@ -1,3 +1,5 @@
+
+
 <div id="article">
 <% @topics.each do |topic| %>
 
@@ -19,4 +21,5 @@
 <% end %>
 
 </div>
-<%= will_paginate @topics, :param_name => 'main_articles_page', :page_links => false %>
+
+<%= will_paginate @topics, :param_name => 'main_articles_page', :page_links => false, :arrows => false %>

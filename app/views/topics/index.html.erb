@@ -1,14 +1,24 @@
+<div id="tagbar">
+
+  <a onclick="show_football()" class="pointer"><%= image_tag 'football.png' %> </a>
+  <a onclick="show_travel()" class="pointer"><%= image_tag 'travel.png' %> </a>
+  <a onclick="show_food()" class="pointer"><%= image_tag 'food.png' %></a>
+  <a onclick="show_general()" class="pointer"><%= image_tag 'general.png' %> </a>
+  <%= link_to image_tag('all.png'), root_path %>
+
+</div>
+
 <div id="tables_box">
 <table>
   <tr><td><h1>Links</h1></td></tr>
   <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=Quote" target="_top"> Send Me a Quote</a></td></tr>
   <tr><td><a onclick="show_register()" class="pointer">Register To Comment</a></td></tr>
   <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=Job" target="_top">Give Me a Job</a></td></tr>
-  <tr><td><%= link_to 'Link To', root_path %></td></tr>
+  <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=Author" target="_top">Become An Author'</a></td></tr>
   <tr><td><%= link_to 'View Archives', topics_backlog_path %></td></tr>
   <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=GeneralMail" target="_top">Mail Me</a></td></tr>
   <tr><td><a href="mailto:daniel.reynolds7a@gmail.com?Subject=WebDesign" target="_top">Request Web Design?</a></td></tr>
-  <tr><td><%= link_to 'About Me', "www.dan.fernconsult.ie", :target => "_blank" %></td></tr>
+  <tr><td><%= link_to 'About Me', "http://dan.fernconsult.ie", :target => "_blank" %></td></tr>
 
 </table>
 
@@ -37,7 +47,7 @@
 
   <p>
     <span class="title">Mmmm!:</span><%= image_tag 'meal.png', :class => "fl" %>Coconut Red Kidney Bean Curry<br /><br />
-    <%= link_to image_tag("link.gif"), "http://www.yummly.com/recipe/Coconut-Rice-Martha-Stewart-194311?columns=4&position=1%2F36" %></p>
+    <%= link_to image_tag("link.gif"), "http://my-recipe-book.herokuapp.com/recipes/8", :target => "_blank" %></p>
 </div>
 <div class="specials">
   <h2>Tune of the Week</h2>
@@ -47,8 +57,8 @@
 </div>
 <div class="specials">
   <h2>Image of the Week</h2>
-  <p><%= image_tag 'joke.png', :class => "fl"  %>
-    <span class="title">Trolltunga Norway</span>Sitting On The Edge of A Cliff.
+  <p><%= image_tag 'joke.gif', :class => "fl"  %>
+    <span class="title">Trolltunga Norway</span>Edge of A Cliff.
     <br /><br /> <%=  link_to image_tag("link.gif"), "http://onebigphoto.com/sitting-on-the-edge-of-trolltunga-norway/?utm_source=newsletter&utm_medium=email&utm_campaign=newletter%2Banalytics", :target => "_blank" %></p>
 </div>
   <div class="specials">
@@ -58,7 +68,7 @@
   <div id="youtube">
     <h2>You<%= image_tag 'tube.png' %>  Of The Week</h2>
     <iframe width="490" height="250"
-            src="//www.youtube.com/embed/ZgqsaDnsEq8" allowfullscreen>
+            src="//www.youtube.com/embed/p8xP96tLOBg" allowfullscreen>
     </iframe>
   </div>
 
@@ -66,6 +76,7 @@
 
 </div>
       <div id="articles">
+
        <%= render 'topics/articles' %>
            </div>
 <div class="flcl"></div>

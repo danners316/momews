@@ -8,6 +8,7 @@ class TopicsController < ApplicationController
     @football = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Football" })
     @topics_all = Topic.search(params[:search_query]).take(5)
 
+
     @likes = Like.order('created_at DESC').take(5)
 
   end
@@ -28,6 +29,8 @@ class TopicsController < ApplicationController
     @general = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "General" }).take(2)
     @food = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Food" }).take(2)
     @travel = Topic.order("created_at DESC").find(:all, :conditions => { :tag => "Travel" }).take(2)
+    @today = Topic.order("created_at DESC").find(:all, :conditions => [" created_at between ? AND ?", Time.zone.now.beginning_of_day, Time.zone.now.end_of_day])
+    @months = Topic.order("created_at DESC").find(:all, :conditions => [" created_at between ? AND ?", Time.zone.now.beginning_of_month, Time.zone.now.end_of_month])
   end
   # GET /topics/new
   # GET /topics/new.json

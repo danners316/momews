@@ -74,7 +74,8 @@ font-size: 16px;
     position:fixed;
     top:0px;
     left:0px;
-z-index:99;}
+z-index:99;
+}
 
 #bar img{float:left;
     margin-left:20px;
@@ -87,6 +88,7 @@ height:165px;
 background-image: url('logobg2.png');
     padding-left: 10px;
     color:white;
+    font-size: 14px;
 opacity: 0.9;
 position:fixed;
 right:0px;
@@ -97,6 +99,7 @@ top:70px;
     height:165px;
     background-image: url('logobg2.png');
     padding-left: 10px;
+    font-size: 14px;
     color:white;
     opacity: 0.9;
     letter-spacing: 0.1em;
@@ -120,12 +123,15 @@ cursor:pointer}
 #tagbar{
     margin:0 0 10px 0;
     width:1048px;
-background-color:#333;
-    border:1px solid #ccc;
-    border-radius: 15px;
+    height:auto;
+    border-top:2px solid #ccc;
+    border-bottom:2px dashed #ccc;
 padding:5px;
+    font-size: 13px;
     text-align: center;
 }
+
+
 
 #tagbar2{
     margin:10px 0 10px 0;
@@ -137,13 +143,15 @@ padding:5px;
     text-align: center;
 }
 
-#tagbar a, #tagbar2 a{color:white;
+#tagbar a, #tagbar2 a{
 margin-right:5px;
 text-decoration: none;
 font-family: "KG Be Still And Know";
 text-transform: uppercase;
 letter-spacing: 0.1em;
+    font-size: 13px;
 }
+
 
 
 
@@ -170,6 +178,7 @@ table{float:right;
 width:190px;
     margin-bottom:10px;
 
+
 background-color: #4D8683;
     border-collapse: collapse;
 }
@@ -195,26 +204,26 @@ border:2px dashed white;
 td a, td, td a:visited{color:white;
 font-family: "KG Be Still And Know";
 text-decoration: none;
-font-size:15px;}
+font-size:14px;}
 
 td a:hover{color:black;
 background-color:#4D8683;}
 
-#tagbar a:hover, #tagbar2 a:hover{font-size:17px;
-color:#666;
-background-color:#333;}
+#tagbar a:hover, #tagbar2 a:hover{
+
+background-color:#F3F4F5;}
+
+#article{min-height: 995px}
 
 #tagbar2 form{display:inline;}
 
 #articles{width:540px;
     text-align: justify;
     margin-right: 20px;
-    min-height:1095px;
+    min-height:1050px;
+    font-size: 15px;
 }
 
-#artcles .pagination{position:relative;
-top:-35px;
-left:500px;}
 
 
 
@@ -230,7 +239,6 @@ left:500px;}
 
 
 
-#article{height:1095px;}
 
 #likes{width:531px;
 clear:left;
@@ -264,7 +272,9 @@ width:300px;}
 .specials{width:284px;
 margin:0 5px;
 float:right;
-clear:right;}
+clear:right;
+font-family: "Accidental Presidency";
+font-size:16px;}
 
 .specials p{margin-top:2px;
     border:2px solid #333;
@@ -281,7 +291,7 @@ h2{color:white;
 padding:2px;
     border:2px solid black;
 font-family: "Accidental Presidency";
-font-size:22px;
+font-size:20px;
     margin:0;
     font-weight: lighter;
     text-align: center;
@@ -294,7 +304,7 @@ h4{color:white;
 
     border:2px solid black;
     font-family: "Accidental Presidency";
-    font-size:22px;
+    font-size:20px;
     margin:0 0 4px 0;
     text-align: center;
 }
@@ -306,7 +316,7 @@ h1, #articles a, #articles a:visited, #archives a, #archives a:visited{color:#4D
     margin:2px 0 10px 0 ;
     letter-spacing: 0.1em;
 
-    font-size:26px;}
+    font-size:22px;}
 
 #articles a, #articles a:visited, #archives a, #archives a:visited {    background-color:#F3F4F5;
 }
@@ -352,7 +362,7 @@ font-weight: bold;}
 text-decoration: none;
 float:right;
     letter-spacing: 0.1em;
-    font-size:16px;
+    font-size: 14px;
 margin:25px 0 0 10px;}
 
 #nav a:hover{
@@ -381,9 +391,50 @@ display:block;
     height:auto;
 overflow: auto;}
 
-.read_more, .read_more:active, .read_more:visited, .read_more:hover, .pagination a, .pagination a:visited, .pagination a:active
+.read_more, .read_more:active, .read_more:visited, .read_more:hover
 {font-size: 16px !important;
 background-color:#F3F4F5; }
+
+.pagination {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 2px;
+    cursor: default;
+    font-size: 10px !important;}
+.pagination a, .pagination span {
+    padding: 2px;
+
+    font-family: "KG Be Still And Know" !important;
+    font-size: 10px !important;}
+.pagination .disabled {
+    color: #aaaaaa;
+    font-size: 10px}
+.pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 1em;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+    font-size: 10px !important;
+
+    background-color: #ccc !important;
+    width:100px !important;
+    border:1px solid #999 !important;
+    padding:5px !important;
+    border-radius:5px !important;}
+.pagination a {
+    font-size: 10px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #ccc !important;
+width:100px !important;
+border:1px solid #999 !important;
+    padding:5px !important;
+border-radius:5px !important;}
+.pagination a:hover, .pagination a:focus {
+    text-decoration: underline;
+    color: #333 !important;}
+
 
 .acc_font{font-family:"Accidental Presidency"}
 

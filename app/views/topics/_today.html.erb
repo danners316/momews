@@ -1,4 +1,6 @@
-<% @general.each do |topic| %>
+
+<% if @today.any? %>
+<% @today.each do |topic| %>
     <span id="byline"><%= topic.name %> - <%= topic.created_at.strftime("%A, %b %d") %></span>
     <h1><%= link_to topic.title, topic %></h1>
     <hr />
@@ -14,5 +16,8 @@
         <%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' }, :class => "read_more" %>
     <% end %>
     <hr />
+<% end %>
+<% else %>
+<span class="title">Sorry. There are no articles published today.</span>
 <% end %>
 

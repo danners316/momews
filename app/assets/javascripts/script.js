@@ -9,6 +9,9 @@ $(document).ready(function() {
 	});
     $("#login").hide();
     $("#register").hide();
+    $("#months").hide();
+    $("#today").hide();
+
 });
 
 captionArray = [
@@ -78,5 +81,89 @@ var show_travel = (function()
 {
 
     $("#articles").load("/topics/backlog #travel");
+
+});
+
+var show_football1 = (function()
+{
+
+    $("#general").hide();
+    $("#travel").hide();
+    $("#food").hide();
+    $("#football").show();
+    $("#month").hide();
+    $("#today").hide();
+
+});
+
+var show_general1 = (function()
+{
+
+    $("#general").show();
+    $("#travel").hide();
+    $("#food").hide();
+    $("#football").hide();
+    $("#month").hide();
+    $("#today").hide();
+
+});
+
+var show_food1 = (function()
+{
+
+    $("#general").hide();
+    $("#travel").hide();
+    $("#food").show();
+    $("#football").hide();
+    $("#month").hide();
+    $("#today").hide();
+
+});
+
+var show_travel1 = (function()
+{
+
+    $("#general").hide();
+    $("#travel").show();
+    $("#food").hide();
+    $("#football").hide();
+    $("#month").hide();
+    $("#today").hide();
+
+});
+
+var show_all1 = (function()
+{
+
+    $("#general").show();
+    $("#travel").show();
+    $("#food").show();
+    $("#football").show();
+    $("#month").hide();
+    $("#today").hide();
+
+});
+
+var show_today = (function()
+{
+
+    $("#today").show();
+    $("#general").hide();
+    $("#travel").hide();
+    $("#food").hide();
+    $("#football").hide();
+    $("#month").hide();
+
+});
+
+var show_month = (function()
+{
+
+    $("#month").show();
+    $("#general").hide();
+    $("#travel").hide();
+    $("#food").hide();
+    $("#football").hide();
+    $("#today").hide();
 
 });

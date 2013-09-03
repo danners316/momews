@@ -1,4 +1,4 @@
-<% @general.each do |topic| %>
+<% @months.each do |topic| %>
     <span id="byline"><%= topic.name %> - <%= topic.created_at.strftime("%A, %b %d") %></span>
     <h1><%= link_to topic.title, topic %></h1>
     <hr />
