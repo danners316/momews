@@ -7,11 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="outwrap">
 <div id="bar">
   <%= link_to image_tag('logo.png'), root_path %>
-  <%= image_tag('twitter.png') %>
-  <%= image_tag('facebook.png') %>
+  <%= link_to image_tag('twitter.png'), "http://ie.linkedin.com/in/danielreynolds7a/" %>
+  <%= link_to image_tag('facebook.png'), "http://ie.linkedin.com/in/danielreynolds7a/" %>
   <a href="mailto:daniel.reynolds7a@gmail.com?Subject=GeneralMail" target="_top"><%= image_tag('mail.png') %></a>
+  <div id="login" >
+
+    <%= render 'sessions/login' %>
+  </div>
+
+  <div id="register" >
+
+    <%= render 'users/form' %>
+  </div>
+
  <!-- <div id="notice"><%= notice %></div>-->
 <div id="nav">
 
@@ -22,28 +33,20 @@
   <% if current_user && current_user.admin %>
    <%= link_to 'New Article', new_topic_path %>
    <%= link_to 'New Like', new_like_path %>
-   
+
       <% end %>
   <% if current_user %>
       <%= link_to "Logout", logout_path %>
   <% end %>
 
 </div>
-  <div id="login" >
 
-   <%= render 'sessions/login' %>
-  </div>
-
-  <div id="register" >
-
-    <%= render 'users/form' %>
-  </div>
 
 
 
 </div>
 
-<div id="outwrap">
+
 <div id="wrapper">
   <div id="quotes">
     <%= image_tag "quote1.png" %>
@@ -52,19 +55,18 @@
     <%= image_tag "quote4.png" %>
     <%= image_tag "quote5.png" %>
   </div>
+  <hr />
 
 
 
 
 
 <%= yield %>
-  <div id="footer">
-    <%= image_tag 'ynhbrand.png'%>
-  </div>
-</div>
 
 </div>
 
+</div>
+<hr />
 <script src="jquery-1.9.1.min.js"></script>
 <script src="jquery.cycle.all.js"></script>
 <script src="script.js"></script>

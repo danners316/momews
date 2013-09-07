@@ -40,14 +40,14 @@ function onAfter(curr,next,opts) {
 
 var show_login = (function()
 {
-$("#register").slideUp();
-$("#login").slideDown();
+    $("#register").fadeOut({width:'hide'},350);
+    $("#login").delay(700).fadeIn({width:'show'},350);
 });
 
 var show_register = (function()
 {
-    $("#login").slideUp();
-    $("#register").slideDown();
+    $("#login").fadeOut({width:'hide'},350);
+    $("#register").delay(700).fadeIn({width:'show'},350);
 });
 
 var hide_box = (function()

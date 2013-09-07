@@ -43,6 +43,7 @@ font-size: 16px;
     width: 1060px;
     margin-left: auto;
     margin-right: auto;
+    z-index:98;
 }
 
 .fr{float:right;}
@@ -67,45 +68,38 @@ font-size: 16px;
 
 
 #bar{
-    width:100%;
+    width:1060px;
+    background-image: url('logobg.png');
+    margin-left: auto;
+    margin-right: auto;
     HEIGHT:70PX;
     opacity:0.9;
-    BACKGROUND-image:url('logobg.png');
-    position:fixed;
-    top:0px;
-    left:0px;
+
 z-index:99;
 }
 
 #bar img{float:left;
-    margin-left:20px;
 }
+
+.specials #cat {text-align: center;
+border: none;}
 
 .pointer{cursor:pointer;}
 
-#login{width:200px;
-height:165px;
-background-image: url('logobg2.png');
-    padding-left: 10px;
-    color:white;
-    font-size: 14px;
-opacity: 0.9;
-position:fixed;
-right:0px;
-top:70px;
-    letter-spacing: 0.1em;}
-
-#register{width:200px;
-    height:165px;
-    background-image: url('logobg2.png');
-    padding-left: 10px;
-    font-size: 14px;
-    color:white;
-    opacity: 0.9;
+#register, #login{
+width:440px;
+    height:auto;
+    float: left;
+    margin:25px 0 0 20px;
+    padding-left: 5px;
+    padding-bottom:5px;
+    color:#333;
     letter-spacing: 0.1em;
-    position:fixed;
-    right:0px;
-    top:70px;}
+}
+
+
+
+
 
 .hide_link{float:right;
 margin-right:5px;
@@ -120,12 +114,13 @@ cursor:pointer}
 }
 
 
+
 #tagbar{
     margin:0 0 10px 0;
     width:1048px;
     height:auto;
-    border-top:2px solid #ccc;
-    border-bottom:2px dashed #ccc;
+    border-top:2px solid #333;
+    border-bottom:2px dashed #333;
 padding:5px;
     font-size: 13px;
     text-align: center;
@@ -134,7 +129,7 @@ padding:5px;
 
 
 #tagbar2{
-    margin:10px 0 10px 0;
+    margin:0 0 10px 0;
     width:1048px;
     background-color:#333;
     border:1px solid #ccc;
@@ -163,23 +158,20 @@ letter-spacing: 0.1em;
 .picture{float:right;
 width:250px;
 height:auto;
-border:1px solid #333;
+border:1px solid black;
+    padding: 2px;
 margin:0 0 5px 15px;}
 
 #tables_box{float:right;
     width:190px;
     margin-left: 10px;}
 
-
-#tables_box h1{text-align: center;
-color:white;}
-
 table{float:right;
 width:190px;
     margin-bottom:10px;
+    text-align: right;
 
 
-background-color: #4D8683;
     border-collapse: collapse;
 }
 
@@ -198,20 +190,21 @@ float:left;
 clear:right;}
 
 td{padding:5px;
-border:2px dashed white;
+border:2px dashed #CCC;
 }
 
-td a, td, td a:visited{color:white;
-font-family: "KG Be Still And Know";
+td a, td, td a:visited{
+font-family: "Accidental Presidency";
 text-decoration: none;
-font-size:14px;}
+font-size:15px;
+color:#333;}
 
-td a:hover{color:black;
-background-color:#4D8683;}
+td a:hover{color:#4D8683;
+}
 
 #tagbar a:hover, #tagbar2 a:hover{
 
-background-color:#F3F4F5;}
+}
 
 #article{min-height: 995px}
 
@@ -286,12 +279,11 @@ font-size:16px;}
 .title, #backlog_box a .title{font-weight:bold;
 display:block;}
 
-h2{color:white;
-    background-color:#333;
+h2{
 padding:2px;
     border:2px solid black;
 font-family: "Accidental Presidency";
-font-size:20px;
+font-size:17px;
     margin:0;
     font-weight: lighter;
     text-align: center;
@@ -308,6 +300,12 @@ h4{color:white;
     margin:0 0 4px 0;
     text-align: center;
 }
+
+#table2{border:none !important;}
+
+.green{color:green !important;}
+.red{color:red !important;}
+.yellow{color:yellow !important;}
 
 h1, #articles a, #articles a:visited, #archives a, #archives a:visited{color:#4D8683;
     font-weight: bold;
@@ -347,7 +345,7 @@ height:70px;}
 
 #nav p{
 
-    color:white;
+
     font-size: 20px;
     letter-spacing: 0.1em;
     margin-top: 0;
@@ -358,7 +356,7 @@ height:70px;}
 #nav p:first-letter{font-size: 45px;
 font-weight: bold;}
 
-#nav a{color:white;
+#nav a{
 text-decoration: none;
 float:right;
     letter-spacing: 0.1em;
@@ -367,14 +365,13 @@ margin:25px 0 0 10px;}
 
 #nav a:hover{
         color:#999;
-    background-color:#333;
+
 }
 
 #quotes{
 height:250px;
 width:100%;
-    margin-bottom:10px;
-z-index:1;}
+    margin-bottom:10px;}
 
 #quotes img { display: none;
         height:auto;}
@@ -396,7 +393,6 @@ overflow: auto;}
 background-color:#F3F4F5; }
 
 .pagination {
-    background: #f1f1f1;
     text-align: center;
     padding: 2px;
     cursor: default;
@@ -407,6 +403,11 @@ background-color:#F3F4F5; }
     font-family: "KG Be Still And Know" !important;
     font-size: 10px !important;}
 .pagination .disabled {
+    background-color: #333 !important;
+    width:100px !important;
+    border:1px solid #999 !important;
+    padding:5px !important;
+    border-radius:5px !important;
     color: #aaaaaa;
     font-size: 10px}
 .pagination .current {
@@ -417,7 +418,7 @@ background-color:#F3F4F5; }
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
     font-size: 10px !important;
 
-    background-color: #ccc !important;
+    background-color: #333 !important;
     width:100px !important;
     border:1px solid #999 !important;
     padding:5px !important;
@@ -426,14 +427,14 @@ background-color:#F3F4F5; }
     font-size: 10px;
     text-decoration: none;
     color: white !important;
-    background-color: #ccc !important;
+    background-color: #333 !important;
 width:100px !important;
 border:1px solid #999 !important;
     padding:5px !important;
 border-radius:5px !important;}
 .pagination a:hover, .pagination a:focus {
     text-decoration: underline;
-    color: #333 !important;}
+    color: #999 !important;}
 
 
 .acc_font{font-family:"Accidental Presidency"}
@@ -466,4 +467,6 @@ height:auto;}
 #comments{width:376px;
     text-align: center;
 padding:10px;}
+
+.specials a:hover{background-color: #f3f4f5;}
 
