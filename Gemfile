@@ -11,6 +11,8 @@ end
 gem 'rails', '3.2.9'
 
 gem 'paperclip'
+gem 'aws-sdk'
+gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
 
 # Bundle edge Rails instead:
