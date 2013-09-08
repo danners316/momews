@@ -12,8 +12,8 @@
  *= require_tree .
  */
 body{
-font-size: 16px;
-    }
+    font-size: 16px;
+}
 
 @font-face {
     font-family: "Accidental Presidency";
@@ -75,19 +75,19 @@ font-size: 16px;
     HEIGHT:70PX;
     opacity:0.9;
 
-z-index:99;
+    z-index:99;
 }
 
 #bar img{float:left;
 }
 
 .specials #cat {text-align: center;
-border: none;}
+    border: none;}
 
 .pointer{cursor:pointer;}
 
 #register, #login{
-width:440px;
+    width:440px;
     height:auto;
     float: left;
     margin:25px 0 0 20px;
@@ -102,8 +102,8 @@ width:440px;
 
 
 .hide_link{float:right;
-margin-right:5px;
-cursor:pointer}
+    margin-right:5px;
+    cursor:pointer}
 
 #nav{
     width:200px;
@@ -121,7 +121,7 @@ cursor:pointer}
     height:auto;
     border-top:2px solid #333;
     border-bottom:2px dashed #333;
-padding:5px;
+    padding:5px;
     font-size: 13px;
     text-align: center;
 }
@@ -139,11 +139,11 @@ padding:5px;
 }
 
 #tagbar a, #tagbar2 a{
-margin-right:5px;
-text-decoration: none;
-font-family: "KG Be Still And Know";
-text-transform: uppercase;
-letter-spacing: 0.1em;
+    margin-right:5px;
+    text-decoration: none;
+    font-family: "KG Be Still And Know";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-size: 13px;
 }
 
@@ -156,18 +156,18 @@ letter-spacing: 0.1em;
     color:white;}
 
 .picture{float:right;
-width:250px;
-height:auto;
-border:1px solid black;
+    width:250px;
+    height:auto;
+    border:1px solid black;
     padding: 2px;
-margin:0 0 5px 15px;}
+    margin:0 0 5px 15px;}
 
 #tables_box{float:right;
     width:190px;
     margin-left: 10px;}
 
 table{float:right;
-width:190px;
+    width:190px;
     margin-bottom:10px;
     text-align: right;
 
@@ -183,23 +183,24 @@ width:190px;
     font-family: "Accidental Presidency";
     font-size:23px;
     letter-spacing: 0.1em;
-text-align: center;}
+    text-align: center;}
 
 #youtube{margin-left:10px;
-float:left;
-clear:right;}
+    float:left;
+    clear:right;}
 
 td{padding:5px;
-border:2px dashed #CCC;
+    border:2px dashed #CCC;
 }
 
 td a, td, td a:visited{
-font-family: "Accidental Presidency";
-text-decoration: none;
-font-size:15px;
-color:#333;}
+    font-family: "Accidental Presidency";
+    text-decoration: none;
+    font-size:15px;
+    color:#333;}
 
 td a:hover{color:#4D8683;
+    background-color: #f3f4f5;
 }
 
 #tagbar a:hover, #tagbar2 a:hover{
@@ -234,17 +235,17 @@ td a:hover{color:#4D8683;
 
 
 #likes{width:531px;
-clear:left;
-float:left;
-padding:5px 0 0 5px;
-margin:5px 0 30px 0;
-letter-spacing: 0.1em;}
+    clear:left;
+    float:left;
+    padding:5px 0 0 5px;
+    margin:5px 0 30px 0;
+    letter-spacing: 0.1em;}
 
 #likes hr{width:540px}
 
 #likes a, likes a:visited, #backlog a, backlog a:visited, #backlog_all a, backlog_all a:visited{color:#333;
     text-decoration: none;
-font-family: "Accidental Presidency"}
+    font-family: "Accidental Presidency"}
 #likes a:hover, #backlog a:hover, backlog_all a:hover{#color:#999;
     background-color:#F3F4F5; }
 
@@ -253,21 +254,21 @@ font-family: "Accidental Presidency"}
     margin:5px 0 30px 10px;
     padding:5px 5px 0 0 ;
     letter-spacing: 0.1em;
-text-align: right;
+    text-align: right;
 }
 
 #backlog_box hr{width:515px}
 
 
 #special_box{float:right;
-width:300px;}
+    width:300px;}
 
 .specials{width:284px;
-margin:0 5px;
-float:right;
-clear:right;
-font-family: "Accidental Presidency";
-font-size:16px;}
+    margin:0 5px;
+    float:right;
+    clear:right;
+    font-family: "Accidental Presidency";
+    font-size:16px;}
 
 .specials p{margin-top:2px;
     border:2px solid #333;
@@ -277,13 +278,13 @@ font-size:16px;}
 }
 
 .title, #backlog_box a .title{font-weight:bold;
-display:block;}
+    display:block;}
 
 h2{
-padding:2px;
+    padding:2px;
     border:2px solid black;
-font-family: "Accidental Presidency";
-font-size:17px;
+    font-family: "KG Be Still And Know";
+    font-size:15px;
     margin:0;
     font-weight: lighter;
     text-align: center;
@@ -330,8 +331,8 @@ h3{color:#333;
     font-size:18px;}
 
 #logo{float:left;
-width:1060px;
-height:70px;}
+    width:1060px;
+    height:70px;}
 #notice{
     width:300px;
     float:left;
@@ -354,43 +355,47 @@ height:70px;}
 }
 
 #nav p:first-letter{font-size: 45px;
-font-weight: bold;}
+    font-weight: bold;}
 
 #nav a{
-text-decoration: none;
-float:right;
+    text-decoration: none;
+    color:#333;
+    float:right;
     letter-spacing: 0.1em;
     font-size: 14px;
-margin:25px 0 0 10px;}
+    margin:25px 0 0 10px;}
 
 #nav a:hover{
-        color:#999;
+    color:#999;
+    background-color: #f3f4f5;
 
 }
 
+#nav a:visited{color: #333 !important;}
+
 #quotes{
-height:250px;
-width:100%;
+    height:250px;
+    width:100%;
     margin-bottom:10px;}
 
 #quotes img { display: none;
-        height:auto;}
+    height:auto;}
 #quotes img.first { display: block }
 
 #byline{font-size:13px;
-font-family:"KG Be Still And Know";
-display:block;
+    font-family:"KG Be Still And Know";
+    display:block;
     color:#4D8683;}
 
 
 
 #outwrap{background-color:#F3F4F5;
     height:auto;
-overflow: auto;}
+    overflow: auto;}
 
 .read_more, .read_more:active, .read_more:visited, .read_more:hover
 {font-size: 16px !important;
-background-color:#F3F4F5; }
+    background-color:#F3F4F5; }
 
 .pagination {
     text-align: center;
@@ -428,10 +433,10 @@ background-color:#F3F4F5; }
     text-decoration: none;
     color: white !important;
     background-color: #333 !important;
-width:100px !important;
-border:1px solid #999 !important;
+    width:100px !important;
+    border:1px solid #999 !important;
     padding:5px !important;
-border-radius:5px !important;}
+    border-radius:5px !important;}
 .pagination a:hover, .pagination a:focus {
     text-decoration: underline;
     color: #999 !important;}
@@ -442,13 +447,13 @@ border-radius:5px !important;}
 /* Topics Show*/
 
 #article_show{float:left;
-width:640px;
-height:auto;
-padding-right:20px;
-text-align: justify;}
+    width:640px;
+    height:auto;
+    padding-right:20px;
+    text-align: justify;}
 
 .picture2{width:640px;
-height:auto;}
+    height:auto;}
 
 
 
@@ -461,12 +466,11 @@ height:auto;}
 
 
 
-    #post_it h2{width:400px !important;
-        border:2px solid #333;}
+#post_it h2{width:400px !important;
+    border:2px solid #333;}
 
 #comments{width:376px;
     text-align: center;
-padding:10px;}
+    padding:10px;}
 
 .specials a:hover{background-color: #f3f4f5;}
-
