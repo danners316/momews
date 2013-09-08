@@ -200,7 +200,6 @@ font-size:15px;
 color:#333;}
 
 td a:hover{color:#4D8683;
-    background-color: #f3f4f5;
 }
 
 #tagbar a:hover, #tagbar2 a:hover{
@@ -283,8 +282,8 @@ display:block;}
 h2{
 padding:2px;
     border:2px solid black;
-font-family: "KG Be Still And Know";
-font-size:15px;
+font-family: "Accidental Presidency";
+font-size:17px;
     margin:0;
     font-weight: lighter;
     text-align: center;
@@ -359,7 +358,6 @@ font-weight: bold;}
 
 #nav a{
 text-decoration: none;
-    color:#333;
 float:right;
     letter-spacing: 0.1em;
     font-size: 14px;
@@ -367,11 +365,8 @@ margin:25px 0 0 10px;}
 
 #nav a:hover{
         color:#999;
-    background-color: #f3f4f5;
 
 }
-
-#nav a:visited{color: #333 !important;}
 
 #quotes{
 height:250px;

@@ -4,10 +4,7 @@ class Topic < ActiveRecord::Base
 
   belongs_to :user
   has_many :posts, :dependent => :destroy
-  has_attached_file :attachment,
-                    :storage => :s3,
-                    :s3_credentials => "#{Rails.root}/config/s3.yml",
-                    :bucket => "mews";
+  has_attached_file :attachment
 
   def self.search(search_query)
     if search_query

@@ -20,15 +20,6 @@ Talk::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.paperclip_defaults = {
-      :storage => :s3,
-      :s3_credentials => {
-          :bucket => ENV['mews'],
-          :access_key_id => ENV['AKIAIBXZO7RCBWHGVF3A'],
-          :secret_access_key => ENV['gHeWUHwbdEjR+90y7pn0PO8PrN93aD3FgNuClBOo']
-      }
-  }
-
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
@@ -74,4 +65,3 @@ Talk::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
-
