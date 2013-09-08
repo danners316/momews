@@ -10,6 +10,7 @@ class TopicsController < ApplicationController
 
 
     @likes = Like.order('created_at DESC').take(5)
+    @user = User.new
 
   end
 
