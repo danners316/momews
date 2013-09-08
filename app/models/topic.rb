@@ -5,9 +5,11 @@ class Topic < ActiveRecord::Base
   belongs_to :user
   has_many :posts, :dependent => :destroy
   has_attached_file :attachment,
-                    :storage => :s3,
-                    :s3_credentials => "#{Rails.root}/config/s3.yml",
-                    :bucket => "mews";
+         styles: {
+          thumb: '100x100>',
+          square: '250x250#',
+          medium: '300x300>'
+      }
 
   def self.search(search_query)
     if search_query
