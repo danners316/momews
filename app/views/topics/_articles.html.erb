@@ -7,7 +7,7 @@
     <h1><%= link_to topic.title, topic %></h1>
     <hr />
     <% if topic.attachment.file? %>
-        <%= image_tag topic.attachment.url(:square) %>
+        <%= image_tag topic.attachment.url, :class => "picture" %>
     <% end %>
     <%= simple_format(truncate(topic.body, :length => 1000)) %>
     <%= link_to "Read More", topic, :class => "read_more" %>
