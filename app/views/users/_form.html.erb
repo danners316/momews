@@ -1,11 +1,11 @@
-<%= form_for users_path do |f| %>
+<%= form_for(@user) do |f| %>
     <div class="acc_font">
 
       <%= f.text_field :name, :value => "Register Name", :size => "20" %> - <%= f.password_field :password, :value => "Password", :size => "20" %>
 
 
 
-    <%= image_submit_tag("login.png")%>
+    <%= image_submit_tag ("login.png")%>
 
 
         </div>
