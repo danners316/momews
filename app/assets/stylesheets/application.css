@@ -13,6 +13,7 @@
  */
 body{
     font-size: 16px;
+    display: none;
 }
 
 @font-face {
@@ -113,8 +114,11 @@ body{
     font-family:"Accidental Presidency";
 }
 
+#likes_page a, #likes_page a:visited{color:#333;
+text-decoration: none;}
 
-
+#likes_page a:hover{color:#4D8683;
+background-color: #f3f4f5;}
 #tagbar{
     margin:0 0 10px 0;
     width:1048px;
@@ -333,16 +337,7 @@ h3{color:#333;
 #logo{float:left;
     width:1060px;
     height:70px;}
-#notice{
-    width:300px;
-    float:left;
-    margin-left:15px;
-    border-bottom:1px solid white;
-    border-right:1px solid white;
-    border-left:1px solid white;
-    color: white !important;
-    height:auto;
-}
+
 
 #nav p{
 
@@ -364,6 +359,18 @@ h3{color:#333;
     letter-spacing: 0.1em;
     font-size: 14px;
     margin:25px 0 0 10px;}
+
+#notice{
+    width:auto;
+    float:right;
+    margin:25px 0 0 10px;
+    color:#4D8683 !important;
+    height:auto;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    border-right:2px solid #4D8683;
+    padding-right: 5px;
+}
 
 #nav a:hover{
     color:#999;

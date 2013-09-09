@@ -4,7 +4,7 @@ def create
   user = User.find_by_name_and_password(params[:name], params[:password])
   if user
     session[:user_id] = user.id
-    redirect_to root_path, :notice => "Logged in successfully"
+    redirect_to root_path, :notice => "Now Logged in"
   else
     redirect_to root_path, :notice => "Incorrect Password"
   end

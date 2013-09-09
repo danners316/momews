@@ -21,6 +21,7 @@ class TopicsController < ApplicationController
     @post = Post.new(params[:post])
     @posts = @topic.posts
 
+
   end
 
   def backlog

@@ -23,12 +23,12 @@
     <%= render 'users/form' %>
   </div>
 
- <!-- <div id="notice"><%= notice %></div>-->
+ <!-- -->
 <div id="nav">
 
   <% unless current_user %>
-  <a onclick="show_register()" class="pointer">Register</a>
   <a onclick="show_login()" class="pointer">Login</a>
+      <span id="notice"><%= notice %></span>
     <%end %>
   <% if current_user && current_user.admin %>
    <%= link_to 'New Article', new_topic_path %>

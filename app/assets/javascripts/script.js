@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#register").hide();
     $("#months").hide();
     $("#today").hide();
+    $("body").fadeIn(2000);
 
 });
 

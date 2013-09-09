@@ -1,4 +1,5 @@
 Talk::Application.routes.draw do
+  resources :users
   resources :likes
 
   get "topics/backlog"
@@ -8,7 +9,7 @@ Talk::Application.routes.draw do
 
 
 
-  resources :users
+
 
   resources :sessions
 
