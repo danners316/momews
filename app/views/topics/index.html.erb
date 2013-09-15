@@ -40,9 +40,15 @@
 </div>
 <div class="specials">
   <h2 id="green">Tune of the Week</h2>
-  <p><%= image_tag 'tune.png', :class => "fl" %>
+  <p>
+
+    <%= image_tag 'tune.png', :class => "fl" %>
   <span class="title">Artist:</span> Ben Nichols<br />
-  <span class="title">Song:</span> Shelter<br /><br /><%= link_to image_tag("link.gif"), "http://www.youtube.com/watch?v=7CLbfmM9lnk", :target => "_blank" %></p>
+  <span class="title">Song:</span> Shelter<br /><br />
+
+    <audio controls="controls">
+      <source src = '/assets/horchata.mp3' />
+    </audio></p>
 </div>
 <div class="specials">
   <h2 id="yellow">Image of the Week</h2>

@@ -197,6 +197,8 @@ td{padding:5px;
     border:2px dashed #CCC;
 }
 
+.specials p audio{width: 265px; float:left; clear:left; margin-top: 5px; }
+
 td a, td, td a:visited{
     font-family: "Accidental Presidency";
     text-decoration: none;
