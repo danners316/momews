@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     if request.post?
       @user = User.new(params[:user])
       if @user.save
-        redirect_to root_path, :notice => "Hello #{@user.name}!"
+        redirect_to root_path, :notice => "Hello #{@user.name}! Please Log In."
       else
         redirect_to root_path, :notice => 'Try another Username.'
       end

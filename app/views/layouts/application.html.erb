@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div id="outwrap">
+
 <div id="bar">
   <%= link_to image_tag('logo.png'), root_path %>
   <%= link_to image_tag('twitter.png'), "http://ie.linkedin.com/in/danielreynolds7a/" %>
@@ -27,8 +29,9 @@
 <div id="nav">
 
   <% unless current_user %>
-  <a onclick="show_login()" class="pointer">Login</a>
-      <span id="notice"><%= notice %></span>
+      <%= link_to 'Home', root_path %>
+      <a onclick="show_login()" class="pointer">Login</a>
+      <a onclick="show_register()" class="pointer">Register</a>
     <%end %>
   <% if current_user && current_user.admin %>
    <%= link_to 'New Article', new_topic_path %>
@@ -70,5 +73,7 @@
 <script src="jquery-1.9.1.min.js"></script>
 <script src="jquery.cycle.all.js"></script>
 <script src="script.js"></script>
+<!-- <div id="register_box"><a onclick="scroll_top()" class="pointer"><%= image_tag('totop.png') %></a></div> _-->
+<!--<div id="notice"><%= notice %>THIS IS A NOTICE</div>-->
 </body>
 </html>

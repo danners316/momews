@@ -85,7 +85,8 @@ body{
 .specials #cat {text-align: center;
     border: none;}
 
-.pointer{cursor:pointer;}
+.pointer{cursor:pointer;
+background-color: #f3f4f5 !important;}
 
 #register, #login{
     width:440px;
@@ -107,7 +108,7 @@ body{
     cursor:pointer}
 
 #nav{
-    width:200px;
+    width:250px;
     HEIGHT:auto;
     margin-right:10px;
     float:right;
@@ -212,6 +213,7 @@ td a:hover{color:#4D8683;
 #tagbar a:hover, #tagbar2 a:hover{
 
 }
+
 
 #article{min-height: 995px}
 
@@ -362,17 +364,7 @@ h3{color:#333;
     font-size: 14px;
     margin:25px 0 0 10px;}
 
-#notice{
-    width:auto;
-    float:right;
-    margin:25px 0 0 10px;
-    color:#4D8683 !important;
-    height:auto;
-    letter-spacing: 0.1em;
-    font-size: 14px;
-    border-right:2px solid #4D8683;
-    padding-right: 5px;
-}
+
 
 #nav a:hover{
     color:#999;
@@ -483,3 +475,26 @@ h3{color:#333;
     padding:10px;}
 
 .specials a:hover{background-color: #f3f4f5;}
+
+
+#register_box{
+    position:fixed;
+    right:15px;
+    top:0;
+}
+
+#register_box a:hover{background-color: #f3f4f5 !important;}
+
+#notice{
+    position: absolute;
+    top:100px;
+    right:10px;
+    color:#4D8683 !important;
+    height:200px;
+    width:200px;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    border:2px solid #4D8683;
+    padding: 5px;
+    z-index:-5;
+}
