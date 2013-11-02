@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'newrelic_rpm'
+
 group :development, :test do
   gem 'sqlite3'
 end
