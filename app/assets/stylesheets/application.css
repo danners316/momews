@@ -47,6 +47,11 @@ body{
     z-index:98;
 }
 
+#outwrap{background-color:#F3F4F5;
+    height:auto;
+    overflow: auto;
+}
+
 .fr{float:right;}
 .fl{float:left;}
 
@@ -311,6 +316,11 @@ h4{color:white;
 }
 
 #table2{border:none !important;}
+#table2 label
+{
+font-family: "KG Be Still And Know";}
+
+#table2 input{font-family: "Courier New" !important;}
 
 .green{color:green !important;}
 .red{color:red !important;}
@@ -390,9 +400,7 @@ h3{color:#333;
 
 
 
-#outwrap{background-color:#F3F4F5;
-    height:auto;
-    overflow: auto;}
+
 
 .read_more, .read_more:active, .read_more:visited, .read_more:hover
 {font-size: 16px !important;
